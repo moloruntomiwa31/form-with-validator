@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    
+    <div class="thank-you">
+        <img src="accept.png" alt="image" width="30px">
+        <h2>Thank you</h2>
+        <p>Your details has been successfully submitted.</p>
+        <button class="btn" id="close">Ok</button>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col1">
+                <div class="inner-head">
+                     <h1>Subscribe and start saving your money today!</h1>
+                </div>
+                <div class="inner-box">
+                    <div class="inner-square"></div>
+                    <div class="inner-text">
+                         <h4>Professional Plan</h4>
+                        <p>$100 / month</p>
+                    </div>
+                </div>
+                <ul class="inner-ul">
+                    <li class="list-items">All features in <span class="inner-text">basic included.</span></li>
+                    <li class="list-items">Easy and flexible business with <span class="inner-text">invoice management.</span> </li>
+                    <li class="list-items">Full time</li>
+                    <li class="list-items"><span class="inner-text">20TB</span> cloud storage.</li>
+                </ul>
+                <a href="#" class="inner-link">Modify Plan</a>
+            </div>
+
+            <div class="col2">
+                <h1>Payment Details</h1>
+                <form action="" id="form">
+                    <p>
+                        <label for="" class="form-label">Email Address</label>
+                        <input type="email" placeholder="johndoe@gmail.com" id="email">
+                    </p>
+                    <p>
+                        <label for="" class="form-label">Credit Card Number</label>
+                        <input type="number" placeholder="XXXX XXXX XXXX XXXX" id="c-num">
+                    </p>
+                    <div class="rowspan-2">
+                        <p>
+                            <label for="" class="form-label">Expiry date</label>
+                            <input type="date">
+                         </p>
+                        <p>
+                            <label for="" class="form-label">CVV</label>
+                            <input type="number" placeholder="xxx" id="cvv">
+                        </p>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" value="I've a promo code.">
+                        <label for="">I've a promo code.</label>
+                    </div>
+                </form>
+                <div class="payment">
+                    <h3>Subtotal</h3>
+                    <p>$100</p>
+                </div>
+                <div  class="payment">
+                    <h3>Platinum Fee</h3>
+                    <p>$50</p>
+                </div>
+                <hr>
+                <div  class="payment">
+                    <h3>Total amount</h3>
+                    <p>$150</p>
+                </div>
+                <button type="submit" class="btn" id="open">Make Payment</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a6d20f9282.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

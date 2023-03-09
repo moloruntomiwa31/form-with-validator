@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fffbeb;
+    font-size: 1.2rem;
+    position: relative;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.circle1 {
+    width: 300px;
+    height: 300px;
+    background-color: #eb455f;
+    border-radius: 300px 100px;
+    position: absolute;
+    left:  -80px;
+    top: -140px;
+    z-index: 1;
+}
+.thank-you {
+    border-radius: 7px;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    background-color: gray;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    font: 1.3rem sans-serif;
+    text-align: center;
+    z-index: 1000;
+    visibility: hidden;
+    transition: all 0.4s;
+}
+.open {
+    top: 50%;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+.thank-you .btn {margin-top: 10px;}
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: 20px 0 0 0;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.col1 {
+    margin-top: 50px;
+    width: 30%;
+    position: relative;
+    background-color: #bad7e9;
+    height: 80vh;
+    border-radius: 10px;
+    z-index: 10;
+}
+.inner-head {
+    width: 100%;
+    background-color: #2b3467;
+    height: 200px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+}
+.inner-head h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    width: 90%;
+}
+.inner-box {
+    /* margin: auto; */
+    position: absolute;
+    top: 150px;
+    right: 80px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+}
+.inner-square {
+    width: 50px;
+    height: 50px;
+    background-color: #eb455f;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.inner-text {
+    align-self: center;
+    font-family: Syne, sans-serif;
+}
+.inner-text h4 {color: rgb(177, 173, 173);}
+.inner-text p {font-weight: 600;}
+.inner-ul {
+    margin-top: 70px;
+    margin-left: 50px;
+    color: rgb(66, 66, 66);
+}
+.inner-ul .inner-text {
+    color: #000;
+    font-weight: 600;
+}
+.list-items {
+    margin: 0 0 15px 0;
+    font-family: Poppins, sans-serif;
+}
+.inner-link {
+    margin-left: 50px;
+    color: #000;
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+}
+.inner-link:hover {
+    content: '';
+    text-decoration: underline rebeccapurple;
+}
+
+.col2 {
+    width: 40%;
+    height: 80vh;
+    z-index: 10;
+}
+.col2 h1 {
+    text-align: left;
+    margin: 20px 0;
+    font-family: Poppins, sans-serif;
+}
+.form-label {
+    display: block;
+    margin: 10px 0;
+    font-family: Syne, sans-serif;
+}
+input[type="number"],  input[type="email"], input[type="date"]{
+    padding: 10px;
+    border-radius: 5px ;
+    width: 80%;
+    box-shadow:  0px 0px 5px #2b3467;
+    border: 0;
+    outline:  #2b3467;
+    font-family: Poppins, sans-serif;
+}
+
+.rowspan-2 {
+    display: flex;
+    gap: 2rem;
+}
+.check {
+    margin: 30px 0 30px 0;
+    font-family: Syne, sans-serif;
+}
+.payment {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin:  10px 0;
+}
+.payment h3,  .payment p{font-family: Syne, sans-serif;}
+.payment h3 {color: rgb(122, 121, 121);}
+.payment p {font-weight: 600;}
+hr {
+    width: 80%;
+}
+.btn {
+    padding: 10px;
+    border-radius: 8px;
+    width: 80%;
+    border: none;
+    background-color: #eb455f;
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    cursor: pointer;
+}
+@media all and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .col1 {
+        width: 80%;
+    }
+    .inner-box {
+    right: 50px;
+    }
+    .col2 {
+    width: 80%;
+    height: 80vh;
+    }
+    .col2 h1 {
+    text-align: left;
+    margin: 20px 0;
+    font-family: Poppins, sans-serif;
+    }
+    input[type="number"],  input[type="email"], input[type="date"], .payment{
+    width: 100%;
+    }
+    .btn, hr {width: 100%;}
+    .btn {margin:20px 0;}
+    .open {
+        top: 120%;
+    }
+}
+@media all and (max-width: 375px) {
+     .inner-box {
+        right: 25px;
+    }
+}
+@media  (min-width: 500px) and (max-width: 540px) {
+     .inner-box {
+        right: 100px;
+    }
+}
+@media (min-width: 998px) and (max-width: 1024px) {
+     .inner-box {
+        right: 35px;
+    }
+    .col1 {
+        height: 100vh;
+    }
+}
