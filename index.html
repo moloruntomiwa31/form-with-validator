@@ -46,19 +46,22 @@
                     <p>
                         <label for="" class="form-label">Email Address</label>
                         <input type="email" placeholder="johndoe@gmail.com" id="email">
+                        <span id="email-error"></span>
                     </p>
                     <p>
                         <label for="" class="form-label">Credit Card Number</label>
-                        <input type="number" placeholder="XXXX XXXX XXXX XXXX" id="c-num">
+                        <input type="number" placeholder="XXXX XXXX XXXX XXXX" id="c-num" maxlength="16">
                     </p>
+                    <span id="cc-error"></span>
                     <div class="rowspan-2">
                         <p>
-                            <label for="" class="form-label">Expiry date</label>
+                            <label for="" class="form-label">Date</label>
                             <input type="date" placeholder="mm/dd/yy">
                          </p>
                         <p>
                             <label for="" class="form-label">CVV</label>
                             <input type="number" placeholder="xxx" id="cvv">
+                            <span id="cvv-error"></span>
                         </p>
                     </div>
                     <div class="check">

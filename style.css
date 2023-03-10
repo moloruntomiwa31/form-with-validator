@@ -157,6 +157,11 @@ input::-webkit-inner-spin-button {
     margin: 10px 0;
     font-family: Syne, sans-serif;
 }
+form span {
+    color: red;
+    font: 0.9em Poppins;
+    padding-top: 10px;
+}
 input[type="number"],  input[type="email"], input[type="date"]{
     padding: 10px;
     border-radius: 5px ;
