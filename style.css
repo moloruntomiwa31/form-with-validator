@@ -49,6 +49,7 @@ input::-webkit-inner-spin-button {
     z-index: 1000;
     visibility: hidden;
     transition: all 0.4s;
+    font-family:  Poppins;
 }
 .open {
     top: 50%;
@@ -70,9 +71,8 @@ input::-webkit-inner-spin-button {
 .col1 {
     margin-top: 50px;
     width: 30%;
-    position: relative;
     background-color: #bad7e9;
-    height: 80vh;
+    height: 70vh;
     border-radius: 10px;
     z-index: 10;
 }
@@ -84,7 +84,6 @@ input::-webkit-inner-spin-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     border-radius: 10px 10px 0 0;
     padding: 10px;
 }
@@ -97,7 +96,6 @@ input::-webkit-inner-spin-button {
     width: 90%;
 }
 .inner-box {
-    /* margin: auto; */
     position: absolute;
     top: 150px;
     right: 80px;
@@ -120,7 +118,7 @@ input::-webkit-inner-spin-button {
 .inner-text h4 {color: rgb(177, 173, 173);}
 .inner-text p {font-weight: 600;}
 .inner-ul {
-    margin-top: 70px;
+    margin-top: 20px;
     margin-left: 50px;
     color: rgb(66, 66, 66);
 }
@@ -129,11 +127,12 @@ input::-webkit-inner-spin-button {
     font-weight: 600;
 }
 .list-items {
-    margin: 0 0 15px 0;
+    margin: 0 5px;
     font-family: Poppins, sans-serif;
 }
 .inner-link {
     margin-left: 50px;
+    margin-top: 10px;
     color: #000;
     text-decoration: none;
     font-family: Poppins, sans-serif;
@@ -245,5 +244,31 @@ hr {
     }
     .col1 {
         height: 100vh;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .row {
+        flex-direction:  row-reverse;
+        width: 80%;
+        gap: 2rem;
+    }
+    .col1 {
+        width: 50%;
+        height: auto;
+        margin: 0;
+        padding: 0 0 20px 0;
+    }
+    .col2 {
+        width: auto;
+        height: auto;
+    }
+    #cvv {
+        width: 50%;
     }
 }
