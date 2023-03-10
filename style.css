@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family:  "Poppins";
+    src: url('./fonts/OTF/Syne-Regular.otf');
+    font-weight:  normal;
+}
 body {
     background-color: #fffbeb;
     font-size: 1.2rem;
